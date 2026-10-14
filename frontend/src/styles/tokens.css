@@ -1,0 +1,78 @@
+/* Design tokens. Light is the default "model board" theme; dark is the night-room theme. */
+:root {
+  --font-ui: 'Public Sans Variable', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Archivo Variable', 'Public Sans Variable', system-ui, sans-serif;
+
+  --fs-xs: 0.75rem;     /* 12 */
+  --fs-sm: 0.8125rem;   /* 13 */
+  --fs-md: 0.875rem;    /* 14 base */
+  --fs-lg: 1rem;        /* 16 */
+  --fs-xl: 1.25rem;     /* 20 */
+  --fs-2xl: 1.75rem;    /* 28 */
+  --fs-meter: 3.25rem;  /* 52 */
+
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-lg: 12px;
+
+  --rail-w: 64px;
+  --top-h: 56px;
+  --panel-w: 360px;
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  /* hazard scale, identical in both themes so colour always means the same thing */
+  --lvl-low: #3f9a7b;
+  --lvl-elevated: #d8a52a;
+  --lvl-high: #e0702f;
+  --lvl-severe: #c4303a;
+  --sev-low: var(--lvl-low);
+  --sev-medium: var(--lvl-elevated);
+  --sev-high: var(--lvl-high);
+  --sev-critical: var(--lvl-severe);
+}
+
+:root,
+:root[data-theme='light'] {
+  color-scheme: light;
+  --board: #e8ecec;
+  --surface: #ffffff;
+  --surface-2: #f3f6f6;
+  --surface-3: #e7ecee;
+  --line: #d6dde0;
+  --line-strong: #bcc7cc;
+  --ink: #15232e;
+  --ink-2: #44565f;
+  --ink-3: #6d7e88;
+  --accent: #284a96;
+  --accent-hover: #1f3b79;
+  --accent-soft: #e4eaf7;
+  --on-accent: #ffffff;
+  --water: #a9cde8;
+  --water-deep: #4f8fc0;
+  --focus: #284a96;
+  --shadow-panel: 0 1px 2px rgba(21, 35, 46, 0.08), 0 8px 24px rgba(21, 35, 46, 0.1);
+  --scrim: rgba(21, 35, 46, 0.4);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --board: #0e161c;
+  --surface: #152029;
+  --surface-2: #1b2933;
+  --surface-3: #24343f;
+  --line: #2a3b47;
+  --line-strong: #3b505e;
+  --ink: #e7eef2;
+  --ink-2: #aebdc6;
+  --ink-3: #7f919c;
+  --accent: #7fa2f0;
+  --accent-hover: #a2bcf6;
+  --accent-soft: #1f2e4d;
+  --on-accent: #0c1626;
+  --water: #1e4560;
+  --water-deep: #3e82b3;
+  --focus: #9db8f5;
+  --shadow-panel: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 28px rgba(0, 0, 0, 0.45);
+  --scrim: rgba(0, 0, 0, 0.55);
+}

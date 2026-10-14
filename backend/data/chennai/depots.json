@@ -1,0 +1,393 @@
+[
+ {
+  "id": "D-RIPON",
+  "name": "Ripon Buildings - Command Depot",
+  "lat": 13.0827,
+  "lng": 80.2707,
+  "scale": "L",
+  "zone": "Z05",
+  "ward": 58,
+  "stocks": {
+   "food": 24000,
+   "water": 6000,
+   "medicine": 1680,
+   "blankets": 12000,
+   "emergency_kits": 4800
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-KOYAMBEDU",
+  "name": "Koyambedu Market Logistics Hub",
+  "lat": 13.0712,
+  "lng": 80.1948,
+  "scale": "L",
+  "zone": "Z10",
+  "ward": 127,
+  "stocks": {
+   "food": 24000,
+   "water": 6000,
+   "medicine": 1680,
+   "blankets": 12000,
+   "emergency_kits": 4800
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-ROYAPURAM",
+  "name": "Royapuram Port-side Warehouses",
+  "lat": 13.104,
+  "lng": 80.291,
+  "scale": "L",
+  "zone": "Z05",
+  "ward": 52,
+  "stocks": {
+   "food": 24000,
+   "water": 6000,
+   "medicine": 1680,
+   "blankets": 12000,
+   "emergency_kits": 4800
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-AMBATTUR",
+  "name": "Ambattur Industrial Estate Depot",
+  "lat": 13.1,
+  "lng": 80.16,
+  "scale": "L",
+  "zone": "Z07",
+  "ward": 86,
+  "stocks": {
+   "food": 24000,
+   "water": 6000,
+   "medicine": 1680,
+   "blankets": 12000,
+   "emergency_kits": 4800
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-GUINDY",
+  "name": "Guindy Industrial Estate Depot",
+  "lat": 13.0095,
+  "lng": 80.212,
+  "scale": "L",
+  "zone": "Z12",
+  "ward": 170,
+  "stocks": {
+   "food": 24000,
+   "water": 6000,
+   "medicine": 1680,
+   "blankets": 12000,
+   "emergency_kits": 4800
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-MEENAMBAKKAM",
+  "name": "Meenambakkam Airport Cargo Staging",
+  "lat": 12.99,
+  "lng": 80.169,
+  "scale": "L",
+  "zone": "Z12",
+  "ward": 159,
+  "stocks": {
+   "food": 24000,
+   "water": 6000,
+   "medicine": 1680,
+   "blankets": 12000,
+   "emergency_kits": 4800
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-MANALI",
+  "name": "Manali Industrial Relief Depot",
+  "lat": 13.17,
+  "lng": 80.258,
+  "scale": "M",
+  "zone": "Z02",
+  "ward": 18,
+  "stocks": {
+   "food": 12000,
+   "water": 3000,
+   "medicine": 840,
+   "blankets": 6000,
+   "emergency_kits": 2400
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-MADHAVARAM",
+  "name": "Madhavaram Milk Colony Depot",
+  "lat": 13.148,
+  "lng": 80.231,
+  "scale": "M",
+  "zone": "Z03",
+  "ward": 30,
+  "stocks": {
+   "food": 12000,
+   "water": 3000,
+   "medicine": 840,
+   "blankets": 6000,
+   "emergency_kits": 2400
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-TONDIARPET",
+  "name": "Tondiarpet Grain Godown",
+  "lat": 13.125,
+  "lng": 80.287,
+  "scale": "M",
+  "zone": "Z04",
+  "ward": 42,
+  "stocks": {
+   "food": 12000,
+   "water": 3000,
+   "medicine": 840,
+   "blankets": 6000,
+   "emergency_kits": 2400
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-NEHRU",
+  "name": "Nehru Indoor Stadium Relief Hub",
+  "lat": 13.0805,
+  "lng": 80.261,
+  "scale": "M",
+  "zone": "Z05",
+  "ward": 58,
+  "stocks": {
+   "food": 12000,
+   "water": 3000,
+   "medicine": 840,
+   "blankets": 6000,
+   "emergency_kits": 2400
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-ANNAUNIV",
+  "name": "Anna University Campus Hub",
+  "lat": 13.0108,
+  "lng": 80.2354,
+  "scale": "M",
+  "zone": "Z13",
+  "ward": 171,
+  "stocks": {
+   "food": 12000,
+   "water": 3000,
+   "medicine": 840,
+   "blankets": 6000,
+   "emergency_kits": 2400
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-ALANDUR",
+  "name": "Alandur - St Thomas Mount Depot",
+  "lat": 13.0035,
+  "lng": 80.2005,
+  "scale": "M",
+  "zone": "Z12",
+  "ward": null,
+  "stocks": {
+   "food": 12000,
+   "water": 3000,
+   "medicine": 840,
+   "blankets": 6000,
+   "emergency_kits": 2400
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-PERUNGUDI",
+  "name": "Perungudi OMR Relief Depot",
+  "lat": 12.965,
+  "lng": 80.246,
+  "scale": "M",
+  "zone": "Z14",
+  "ward": 184,
+  "stocks": {
+   "food": 12000,
+   "water": 3000,
+   "medicine": 840,
+   "blankets": 6000,
+   "emergency_kits": 2400
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-SHOLINGA",
+  "name": "Sholinganallur OMR Relief Depot",
+  "lat": 12.901,
+  "lng": 80.228,
+  "scale": "M",
+  "zone": "Z15",
+  "ward": 197,
+  "stocks": {
+   "food": 12000,
+   "water": 3000,
+   "medicine": 840,
+   "blankets": 6000,
+   "emergency_kits": 2400
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-AVADI",
+  "name": "Avadi Heavy Vehicles Staging Area",
+  "lat": 13.105,
+  "lng": 80.105,
+  "scale": "M",
+  "zone": "S-AVADI",
+  "ward": null,
+  "stocks": {
+   "food": 12000,
+   "water": 3000,
+   "medicine": 840,
+   "blankets": 6000,
+   "emergency_kits": 2400
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-PALLAVARAM",
+  "name": "Pallavaram Cantonment Depot",
+  "lat": 12.969,
+  "lng": 80.152,
+  "scale": "M",
+  "zone": "S-PALLAVARAM",
+  "ward": null,
+  "stocks": {
+   "food": 12000,
+   "water": 3000,
+   "medicine": 840,
+   "blankets": 6000,
+   "emergency_kits": 2400
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-TAMBARAM",
+  "name": "Tambaram Air Force Station Staging",
+  "lat": 12.9066,
+  "lng": 80.1218,
+  "scale": "M",
+  "zone": "S-TAMBARAM",
+  "ward": null,
+  "stocks": {
+   "food": 12000,
+   "water": 3000,
+   "medicine": 840,
+   "blankets": 6000,
+   "emergency_kits": 2400
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-ANNANAGAR",
+  "name": "Anna Nagar Zonal Depot",
+  "lat": 13.085,
+  "lng": 80.21,
+  "scale": "S",
+  "zone": "Z08",
+  "ward": 99,
+  "stocks": {
+   "food": 6000,
+   "water": 1500,
+   "medicine": 420,
+   "blankets": 3000,
+   "emergency_kits": 1200
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-TNAGAR",
+  "name": "T. Nagar Zonal Depot",
+  "lat": 13.042,
+  "lng": 80.233,
+  "scale": "S",
+  "zone": "Z10",
+  "ward": 136,
+  "stocks": {
+   "food": 6000,
+   "water": 1500,
+   "medicine": 420,
+   "blankets": 3000,
+   "emergency_kits": 1200
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-ADYAR",
+  "name": "Adyar Zonal Relief Depot",
+  "lat": 13.007,
+  "lng": 80.257,
+  "scale": "S",
+  "zone": "Z13",
+  "ward": 175,
+  "stocks": {
+   "food": 6000,
+   "water": 1500,
+   "medicine": 420,
+   "blankets": 3000,
+   "emergency_kits": 1200
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-TARAMANI",
+  "name": "Taramani Campus Hub",
+  "lat": 12.987,
+  "lng": 80.243,
+  "scale": "S",
+  "zone": "Z13",
+  "ward": 180,
+  "stocks": {
+   "food": 6000,
+   "water": 1500,
+   "medicine": 420,
+   "blankets": 3000,
+   "emergency_kits": 1200
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-CHROMPET",
+  "name": "Chrompet Bus Depot Relief Point",
+  "lat": 12.952,
+  "lng": 80.14,
+  "scale": "S",
+  "zone": "S-CHROMPET",
+  "ward": null,
+  "stocks": {
+   "food": 6000,
+   "water": 1500,
+   "medicine": 420,
+   "blankets": 3000,
+   "emergency_kits": 1200
+  },
+  "placeholder": true
+ },
+ {
+  "id": "D-THIRUVOTT",
+  "name": "Thiruvottiyur Zonal Depot",
+  "lat": 13.159,
+  "lng": 80.3,
+  "scale": "S",
+  "zone": "Z01",
+  "ward": 10,
+  "stocks": {
+   "food": 6000,
+   "water": 1500,
+   "medicine": 420,
+   "blankets": 3000,
+   "emergency_kits": 1200
+  },
+  "placeholder": true
+ }
+]

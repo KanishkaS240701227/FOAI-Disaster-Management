@@ -1,0 +1,5 @@
+-r requirements.txt
+pytest>=8.0
+httpx>=0.27
+# only needed to rebuild backend/data/chennai (python -m backend.scripts.build_chennai_data <datameet folder>)
+shapely>=2.0

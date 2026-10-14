@@ -1,0 +1,46 @@
+{
+  "hash": "ac092ee2",
+  "configHash": "c23584a9",
+  "lockfileHash": "0bb3f639",
+  "browserHash": "8e1dc5ea",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "a0aa9b9f",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "6004dbf5",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "0b72b81a",
+      "needsInterop": true
+    },
+    "lucide-react": {
+      "src": "../../node_modules/lucide-react/dist/esm/lucide-react.js",
+      "file": "lucide-react.js",
+      "fileHash": "3c125b5b",
+      "needsInterop": false
+    },
+    "maplibre-gl": {
+      "src": "../../node_modules/maplibre-gl/dist/maplibre-gl.js",
+      "file": "maplibre-gl.js",
+      "fileHash": "0668d31c",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-32E4H3EV": {
+      "file": "chunk-32E4H3EV.js"
+    },
+    "chunk-G3PMV62Z": {
+      "file": "chunk-G3PMV62Z.js"
+    }
+  }
+}

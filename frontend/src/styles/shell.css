@@ -1,0 +1,95 @@
+.app { display: grid; grid-template-columns: var(--rail-w) 1fr; height: 100%; }
+
+/* ------------------------------------------------------------------ rail */
+.rail {
+  display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 10px 0;
+  background: var(--surface); border-right: 1px solid var(--line); z-index: 30;
+}
+.rail__mark { width: 36px; height: 36px; margin-bottom: 12px; display: grid; place-items: center; }
+.rail__link {
+  position: relative; width: 48px; height: 52px; display: grid; justify-items: center; align-content: center; gap: 3px;
+  border-radius: var(--r-md); color: var(--ink-3); text-decoration: none; font-size: 11px; font-weight: 600;
+  transition: background 120ms, color 120ms;
+}
+.rail__link:hover { background: var(--surface-3); color: var(--ink); }
+.rail__link[aria-current='page'] { color: var(--accent); background: var(--accent-soft); }
+.rail__spacer { flex: 1; }
+
+/* ------------------------------------------------------------------ top bar */
+.main { display: grid; grid-template-rows: var(--top-h) 1fr; min-width: 0; min-height: 0; }
+.top {
+  display: flex; align-items: center; gap: 14px; padding: 0 16px; background: var(--surface);
+  border-bottom: 1px solid var(--line); z-index: 20; min-width: 0;
+}
+/* Everything in the top bar may shrink (title and status text get an ellipsis) so the bar never grows wider than the screen. */
+.top__title { font-family: var(--font-display); font-size: var(--fs-lg); font-weight: 700; white-space: nowrap; min-width: 0; overflow: hidden; text-overflow: ellipsis; flex: 0 1 auto; }
+.top__title small { font-family: var(--font-ui); font-weight: 500; color: var(--ink-3); font-size: var(--fs-sm); margin-left: 8px; }
+.top__short { display: none; }
+.top__spacer { flex: 1 1 0; min-width: 0; }
+.fresh { display: inline-flex; align-items: center; gap: 8px; color: var(--ink-2); font-size: var(--fs-sm); white-space: nowrap; min-width: 0; flex: 0 1 auto; }
+.fresh__text { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.fresh .btn, .fresh__dot { flex: none; }
+.fresh__dot { width: 8px; height: 8px; border-radius: 50%; background: var(--lvl-low); box-shadow: 0 0 0 3px color-mix(in srgb, var(--lvl-low) 25%, transparent); }
+.fresh--stale .fresh__dot { background: var(--lvl-elevated); box-shadow: 0 0 0 3px color-mix(in srgb, var(--lvl-elevated) 28%, transparent); }
+.fresh--replay .fresh__dot { background: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent); }
+
+.scenario { position: relative; flex: none; }
+.scenario__btn {
+  display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 12px; max-width: 280px;
+  background: var(--surface-2); border: 1px solid var(--line-strong); border-radius: var(--r-md); font-weight: 600;
+}
+.scenario__btn span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* The button sits at the right end of the top bar, so the menu hangs from its right edge and grows leftwards. */
+.scenario__menu {
+  position: absolute; top: 44px; right: 0; left: auto; width: min(380px, calc(100vw - 24px));
+  max-height: calc(100vh - var(--top-h) - 24px); max-height: calc(100dvh - var(--top-h) - 24px);
+  overflow: auto; overscroll-behavior: contain; z-index: 60;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); box-shadow: var(--shadow-panel); padding: 6px;
+}
+.scenario__group { padding: 10px 10px 4px; color: var(--ink-3); font-size: var(--fs-xs); font-weight: 650; }
+.scenario__item {
+  display: grid; grid-template-columns: 18px 1fr; gap: 10px; width: 100%; text-align: left; border: 0; background: transparent;
+  padding: 8px 10px; border-radius: var(--r-md); align-items: start;
+}
+.scenario__item:hover { background: var(--surface-2); }
+.scenario__item[aria-checked='true'] { background: var(--accent-soft); }
+.scenario__item b { display: block; font-weight: 600; }
+.scenario__item small { display: block; color: var(--ink-2); font-size: var(--fs-sm); margin-top: 2px; line-height: 1.35; }
+.scenario__radio { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--line-strong); margin-top: 3px; }
+.scenario__item[aria-checked='true'] .scenario__radio { border-color: var(--accent); background: radial-gradient(var(--accent) 45%, transparent 50%); }
+
+.page { min-height: 0; min-width: 0; position: relative; overflow: hidden; }
+.page--scroll { overflow: auto; }
+
+/* ------------------------------------------------------------------ toast */
+.toasts { position: fixed; right: 16px; bottom: 16px; display: grid; gap: 8px; z-index: 100; max-width: min(420px, calc(100vw - 32px)); }
+.toast {
+  display: flex; gap: 10px; align-items: flex-start; padding: 10px 14px; background: var(--ink); color: var(--board);
+  border-radius: var(--r-md); box-shadow: var(--shadow-panel); font-size: var(--fs-sm); animation: toast-in 200ms var(--ease);
+}
+.toast--error { background: var(--lvl-severe); color: #fff; }
+@keyframes toast-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+@media (max-width: 760px) {
+  .app { grid-template-columns: 1fr; grid-template-rows: 1fr 56px; }
+  .rail { order: 2; flex-direction: row; justify-content: space-around; padding: 0 8px; border-right: 0; border-top: 1px solid var(--line); }
+  .rail__mark, .rail__spacer { display: none; }
+  .rail__link { height: 48px; }
+  .top { gap: 8px; padding: 0 10px; }
+  .top__title small, .fresh__text { display: none; }
+  /* On a phone the menu is pinned to the screen, not to the button, so it can never run off either side
+     and it stops above the bottom navigation bar. */
+  .scenario { position: static; }
+  .scenario__menu {
+    position: fixed; top: calc(var(--top-h) + 6px); left: 10px; right: 10px; width: auto;
+    max-height: calc(100vh - var(--top-h) - 56px - 20px); max-height: calc(100dvh - var(--top-h) - 56px - 20px);
+  }
+  .scenario__btn { max-width: 52vw; }
+}
+/* Small phones: use the short page name so the title and the Live button both fit. */
+@media (max-width: 560px) {
+  .top__long { display: none; }
+  .top__short { display: inline; }
+}
+/* On mid-size windows the long status sentence goes first, then the place name. */
+@media (max-width: 1100px) { .top__title small { display: none; } }
